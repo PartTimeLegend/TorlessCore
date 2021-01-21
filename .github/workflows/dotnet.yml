@@ -24,9 +24,9 @@ jobs:
     - name: dotnet publish
       run: dotnet publish --configuration Release
     - name: Pack
-      run: dotnet pack -v normal -c Release --no-restore --include-symbols --include-source -p:PackageVersion=$GITHUB_RUN_ID $PROJECT_NAME/$PROJECT_NAME.*proj
+      run: dotnet pack -v normal -c Release --no-restore --include-symbols --include-source -p:PackageVersion=$GITHUB_RUN_ID
     - name: Upload Artifact
       uses: actions/upload-artifact@v2
       with:
         name: nupkg
-        path: ./${{ env.PROJECT_NAME }}/bin/Release/*.nupkg
+        path: ./TorlessCore/bin/Release/*.nupkg
