@@ -24,7 +24,7 @@ jobs:
     - name: dotnet publish
       run: dotnet publish --configuration Release
     - name: Pack
-      run: dotnet pack -v normal -c Release --no-restore --include-symbols --include-source -p:PackageVersion=$GITHUB_RUN_ID
+      run: dotnet pack -v normal -c Release --no-restore --include-symbols --include-source -p:PackageVersion=0.1.$GITHUB_RUN_ID
     - name: Upload Artifact
       uses: actions/upload-artifact@v2
       with:
