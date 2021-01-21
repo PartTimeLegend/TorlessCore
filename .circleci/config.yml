@@ -13,6 +13,6 @@
        - run: dotnet restore
        - run: dotnet build
        - run: dotnet publish --configuration Release
-       - run: dotnet pack --no-build --configuration Release --include-symbols --include-source --output C:\nuget -p:PackageVersion=0.1.${CIRCLE_BUILD_NUM}
+       - run: dotnet pack --no-build --configuration Release --include-symbols --include-source --output C:\nuget -p:PackageVersion="0.1.${CIRCLE_BUILD_NUM}"
        - store_artifacts:
           path: C:\nuget
