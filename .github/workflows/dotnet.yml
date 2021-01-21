@@ -25,4 +25,5 @@ jobs:
       run: dotnet build --no-restore
     - name: dotnet publish
       run: dotnet publish --configuration Release
-    - name: dotnet pack --no-build --configuration Release --include-symbols --include-source 
+    - name: dotnet pack
+      run dotnet pack --no-build --configuration Release --include-symbols --include-source 
