@@ -14,3 +14,5 @@
        - run: dotnet build
        - run: dotnet publish --configuration Release
        - run: dotnet pack --configuration Release
+       - store_artifacts:
+          path: C:\Users\circleci\project\TorlessCore\bin\Release\
