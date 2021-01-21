@@ -9,4 +9,8 @@
     
      steps:
        - checkout
+       - run: dotnet clean 
+       - run: dotnet restore
        - run: dotnet build
+       - run: dotnet publish --configuration Release
+       - run: dotnet pack --configuration Release
