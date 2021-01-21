@@ -10,6 +10,7 @@
      steps:
        - checkout
        - run: $env:BuildNumber = ${CIRCLE_BUILD_NUM}
+       - run: "Build #" $env:BuildNumber
        - run: dotnet clean 
        - run: dotnet restore
        - run: dotnet build
