@@ -30,7 +30,7 @@ jobs:
       with:
         name: nupkg
         path: ./TorlessCore/bin/Release/*.nupkg  
-    - name: Publish Nuget
-      run: dotnet nuget push ./TorlessCore/bin/Release/*.nupkg --skip-duplicate --no-symbols false
+    - name: Publish 
+      run: dotnet nuget push ./TorlessCore/bin/Release/*.nupkg --skip-duplicate --no-symbols true
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
