@@ -13,6 +13,6 @@
        - run: dotnet restore
        - run: dotnet build
        - run: dotnet publish --configuration Release
-       - run: dotnet pack --configuration Release
+       - run: dotnet pack --no-build --configuration Release --include-symbols --include-source --output C:\nuget
        - store_artifacts:
-          path: /artifacts
+          path: C:\nuget
