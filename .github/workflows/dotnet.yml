@@ -17,6 +17,7 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
+        source-url: https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
@@ -30,3 +31,7 @@ jobs:
       with:
         name: nupkg
         path: ./TorlessCore/bin/Release/*.nupkg  
+    - name: Publish Client
+      run: dotnet nuget push ./TorlessCore/bin/Release/*.nupkg  --skip-duplicate --no-symbols true
+      env:
+        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
