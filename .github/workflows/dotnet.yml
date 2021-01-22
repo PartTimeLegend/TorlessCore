@@ -34,7 +34,7 @@ jobs:
         name: nupkg
         path: ./TorlessCore/bin/Release/*.nupkg  
     - name: Publish Client
-      if: github.ref == 'refs/heads/develop'
       run: dotnet nuget push ./TorlessCore/bin/Release/*.nupkg  --skip-duplicate --no-symbols true
+      if: github.ref == 'refs/heads/develop'
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
