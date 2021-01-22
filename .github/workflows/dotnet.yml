@@ -33,8 +33,12 @@ jobs:
       with:
         name: nupkg
         path: ./TorlessCore/bin/Release/*.nupkg  
+    - name: Extract branch name
+      shell: bash
+      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF##*/})"
+      id: extract_branch  
     - name: Publish Client
       run: dotnet nuget push ./TorlessCore/bin/Release/*.nupkg  --skip-duplicate --no-symbols true
-      if: github.ref == 'refs/heads/master'
+      if: steps.extract_branch.outputs.branch == 'master'
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
