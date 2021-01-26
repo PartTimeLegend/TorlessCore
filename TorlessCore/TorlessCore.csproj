@@ -3,6 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RepositoryUrl>https://github.com/PartTimeLegend/TorlessCore</RepositoryUrl>
+    <PackageLicenseFile>..\LICENSE</PackageLicenseFile>
   </PropertyGroup>
-
+  <ItemGroup>
+    <None Include="..\LICENSE" Pack="true" PackagePath="LICENSE"/>
+  </ItemGroup>
 </Project>
