@@ -1,9 +1,0 @@
-C:\Users\22786\source\repos\TorlessCore\TorlessCore\bin\Debug\netcoreapp3.1\TorlessCore.deps.json
-C:\Users\22786\source\repos\TorlessCore\TorlessCore\bin\Debug\netcoreapp3.1\TorlessCore.dll
-C:\Users\22786\source\repos\TorlessCore\TorlessCore\bin\Debug\netcoreapp3.1\TorlessCore.pdb
-C:\Users\22786\source\repos\TorlessCore\TorlessCore\obj\Debug\netcoreapp3.1\TorlessCore.csprojAssemblyReference.cache
-C:\Users\22786\source\repos\TorlessCore\TorlessCore\obj\Debug\netcoreapp3.1\TorlessCore.AssemblyInfoInputs.cache
-C:\Users\22786\source\repos\TorlessCore\TorlessCore\obj\Debug\netcoreapp3.1\TorlessCore.AssemblyInfo.cs
-C:\Users\22786\source\repos\TorlessCore\TorlessCore\obj\Debug\netcoreapp3.1\TorlessCore.csproj.CoreCompileInputs.cache
-C:\Users\22786\source\repos\TorlessCore\TorlessCore\obj\Debug\netcoreapp3.1\TorlessCore.dll
-C:\Users\22786\source\repos\TorlessCore\TorlessCore\obj\Debug\netcoreapp3.1\TorlessCore.pdb
