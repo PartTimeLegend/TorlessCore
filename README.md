@@ -11,13 +11,13 @@ The package available here may work, it may not. I recommend you use the officia
 ### Package Manager
 
 ```powershell
-Install-Package TorlessCore -Version 0.1.504110160
+Install-Package TorlessCore 
 ```
 
 ### .NET CLI
 
 ```powershell
-dotnet add package TorlessCore --version 0.1.504110160
+dotnet add package TorlessCore
 ```
 
 ### PackageReference
