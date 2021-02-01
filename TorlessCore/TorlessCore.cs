@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+  Copyright (c) 2021 Antony Bailey
+  Distributed under the MIT software license, see the accompanying
+  file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+*/
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
