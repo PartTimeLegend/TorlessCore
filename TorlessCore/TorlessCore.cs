@@ -9,7 +9,8 @@ namespace TorlessCore
     {
         public static bool IsATorExitNode(string clientIpAddress, string serverIpAddress)
         {
-            return IsATorExitNode(clientIpAddress, serverIpAddress, 80);
+            int defaultPort = 80;
+            return IsATorExitNode(clientIpAddress, serverIpAddress, defaultPort);
         }
         public static bool IsATorExitNode(string clientIpAddress, string serverIpAddress, int portToCheck)
         {
