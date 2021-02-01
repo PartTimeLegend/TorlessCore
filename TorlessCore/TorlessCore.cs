@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Linq;
 using System.Net;
-
+[assembly: System.Runtime.InteropServices.ComVisible(true)]
 namespace TorlessCore
 {
     public static class TorlessCore
