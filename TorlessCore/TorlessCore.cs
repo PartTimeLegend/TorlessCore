@@ -7,13 +7,18 @@ namespace TorlessCore
 {
     public static class TorlessCore
     {
-        public static bool IsATorExitNode(string clientIpAddress, string serverIpAddress, int portToCheck = 80)
+        public static bool IsATorExitNode(string clientIpAddress, string serverIpAddress)
+        {
+            return IsATorExitNode(clientIpAddress, serverIpAddress, 80);
+        }
+        public static bool IsATorExitNode(string clientIpAddress, string serverIpAddress, int portToCheck)
         {
             string addressToCheck = ReverseGraphemeClusters(clientIpAddress) + "." + portToCheck + "." + ReverseGraphemeClusters(serverIpAddress) + ".ip-port.exitlist.torproject.org";
             IPHostEntry ipHostEntry = Dns.GetHostEntry(addressToCheck);
 
             return ipHostEntry.AddressList[0].ToString() == "127.0.0.2";
         }
+
         private static IEnumerable<string> GraphemeClusters(this string s)
         {
             TextElementEnumerator enumerator = StringInfo.GetTextElementEnumerator(s);
