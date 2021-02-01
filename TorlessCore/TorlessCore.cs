@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Net;
 [assembly: System.Runtime.InteropServices.ComVisible(true)]
+[assembly: CLSCompliant(true)]
 namespace TorlessCore
 {
     public static class TorlessCore
